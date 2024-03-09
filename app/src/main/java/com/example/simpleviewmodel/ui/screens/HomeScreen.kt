@@ -6,6 +6,7 @@ import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.height
 import androidx.compose.material3.Button
+import androidx.compose.material3.SnackbarDuration
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
@@ -34,7 +35,10 @@ fun HomeScreen(
     ) {
         Text(clickCounter.toString(), fontSize =  24.sp)
         Spacer(modifier = Modifier.height(16.dp))
-        Button(onClick = { viewModel.incrementAndSaveClickCounter() }) {
+        Button(onClick = {
+            viewModel.incrementAndSaveClickCounter()
+            viewModel.showSnackbar("You clicked again!", duration = SnackbarDuration.Indefinite)
+        }) {
             Text("Klick mich")
         }
     }
