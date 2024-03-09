@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">SimpleViewModel</string>
+
+    <string name="settingsScreenTitle">Einstellungen</string>
+    <string name="detailsScreenTitle">Details</string>
+    <string name="homeScreenTitle">Home</string>
+
+    <string name="otherScreen1Title">Fullscreen 1</string>
+    <string name="otherScreen2Title">Fullscreen 2</string>
+
+    <string name="settingsScreenLabel">Config</string>
+    <string name="detailsScreenLabel">Details</string>
+    <string name="homeScreenLabel">Home</string>
+
+    <string name="menuItem1">Item 1</string>
+    <string name="menuItem2">Item 2</string>
+    <string name="menuItem3">Info</string>
+
+
+</resources>
