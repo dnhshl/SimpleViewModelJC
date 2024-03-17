@@ -16,7 +16,6 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 import com.example.simpleviewmodel.model.MainViewModel
-import com.example.simpleviewmodel.ui.navigation.NavDestination
 
 
 @Composable

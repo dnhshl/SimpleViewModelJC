@@ -54,7 +54,7 @@ fun MyMenu( showMenu: Boolean = false,
                 onClick = {
                     Log.i(">>>>", "Info")
                     onToggleMenu()
-                    navController.navigate(NavDestination.Info.route)
+                    navController.navigate(MyNavDestination.Info.route)
                 }
             )
         }

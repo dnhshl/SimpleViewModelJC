@@ -1,6 +1,5 @@
 package com.example.simpleviewmodel.ui.screens
 
-import android.util.Log
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.MaterialTheme
@@ -8,7 +7,6 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Snackbar
 import androidx.compose.material3.SnackbarHost
 import androidx.compose.material3.SnackbarHostState
-import androidx.compose.material3.SnackbarResult
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
@@ -27,7 +25,7 @@ import com.example.simpleviewmodel.model.MainViewModel
 import com.example.simpleviewmodel.ui.navigation.MyMenu
 import com.example.simpleviewmodel.ui.navigation.MyNavBar
 import com.example.simpleviewmodel.ui.navigation.MyTopBar
-import com.example.simpleviewmodel.ui.navigation.NavDestination
+import com.example.simpleviewmodel.ui.navigation.MyNavDestination
 import com.example.simpleviewmodel.ui.navigation.bottomBarNavDestinations
 import com.example.simpleviewmodel.ui.navigation.dialogDestinations
 import com.example.simpleviewmodel.ui.navigation.navDestinations
@@ -74,7 +72,7 @@ fun MyApp() {
     ) { paddingValues ->
         NavHost(
             navController = navController,
-            startDestination = NavDestination.Home.route,
+            startDestination = MyNavDestination.Home.route,
             modifier = Modifier
                 .padding(paddingValues)
         ) {
